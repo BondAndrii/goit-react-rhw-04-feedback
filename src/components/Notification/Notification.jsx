@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from 'prop-types'
 
+import style from "./Notification.module.css"
+
 export function Notification({ massage }) {
-    return <p className="Trailer">
+    return <p className={style.Trailer}>
         {massage}
     </p>
 };
