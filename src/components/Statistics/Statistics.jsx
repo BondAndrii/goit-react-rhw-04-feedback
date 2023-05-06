@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types'
 
-const Statistics = ({good, neutral, bad, total, positivePercentage, neutralPercentage}) => (
+export const Statistics = ({good, neutral, bad, total, positivePercentage, neutralPercentage}) => (
     <div>
         {total > 0 && (<ul>
         <p className="Trailer">{total} людей нам кажуть {good} разів супер, {neutral} разів норм, {bad} разів відстій.</p>
@@ -32,4 +32,4 @@ Statistics.propTypes = {
     neutralPercentage: PropTypes.number.isRequired,
 }
 
-export default Statistics;
+ 

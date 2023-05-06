@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import "./Feedback.css";
-import Statistics from "./Statistics";
-import FeedbackOptions from "./FeedbackOptions";
-import Section from "./Section";
-import Notification from "./Notification";
+import styles from "./Feedback.module.css"
+import {Statistics} from "../Statistics/Statistics";
+import {FeedbackOptions} from "../FeedbackOptions/FeedbackOptions";
+import {Section} from "../Section/Section";
+import {Notification} from "../Notification/Notification";
 
 
 
-class Feedback extends Component {    
+export class Feedback extends Component {    
     state = {
         good: 0,
         neutral: 0,
@@ -63,7 +63,7 @@ class Feedback extends Component {
     }  
     render() {
     return (
-        <div className="Feedback">
+        <div className={styles.Feedback}>
             <Section
                 title={"Реакція на наші послуги"}
                 trailer={"*будь-ласка, залиште відгук, натиснувши на вибрану кнопку"}
@@ -120,4 +120,3 @@ class Feedback extends Component {
     
 
 
-export default Feedback;

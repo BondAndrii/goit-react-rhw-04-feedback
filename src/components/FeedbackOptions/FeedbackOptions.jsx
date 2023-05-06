@@ -1,21 +1,21 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import "./FeedbackOptions.css"
-const FeedbackOptions = ({ options, answer, name }) => (  
+import style from "./FeedbackOptions.module.css"
+export const FeedbackOptions = ({ options, answer, name }) => (  
    
-    <ul className="ButtonPlace">
+    <ul className={style.ButtonPlace}>
         {options.map(option => (
             <button
                 key={option}
                 type="button"
-                className="ButtonOption"
+                className={style.ButtonOption}
                 onClick={() => answer(option)}
             >{name[option]}</button>
         ))}
     </ul>
 );
 
-export default FeedbackOptions;
+
 
 
 FeedbackOptions.propTypes = {
