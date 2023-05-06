@@ -1,0 +1,20 @@
+.ButtonPlace {
+    
+    margin-right: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ButtonOption {
+    
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 16px;
+    border: 7px solid lightskyblue;
+
+}
+
